@@ -1,0 +1,107 @@
+*, *::before, *::after {
+  box-sizing: border-box;  /* Alternative Box Model */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit; /* wipe all User Agent fonts, sizes, and weights */
+}
+
+body {
+  /* font-family: 'Arial', sans-serif; */
+  /* color: rgb(42, 43, 42); */
+  /* min-height: 100vh; */
+}
+
+img, picture, svg, video {
+  display: block; /* remove the small whitespace that renders under each */
+  max-width: 100%; /* allow to shrink with its container when forced */
+  height: auto;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+body {
+  background-color: black;
+}
+
+.main-container {
+  /* border: 2px solid red; */
+  max-width: 680px;
+  min-height: 100vh;
+  margin: 10px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  background-image: url(./img/bg-container.jpg);
+  background-size: 100%;
+  border-bottom: 5px solid white;
+  border-radius: 6px;
+
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.wrap {
+  /* border: 2px solid blue; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* margin-bottom: 30px; */
+}
+
+
+/* CSS text-shadow HOW TO??
+	text-shadow: 3px 3px 1px #bebebe;
+   CSS box-shadow HOW TO??
+	box-shadow: 6px 6px 5px 0 #bebebe;
+note it is easy to visualize/manipulate both of these in DevTools!   
+
+  CSS transition-timing-function HOW TO??
+  CSS animation-timing-function HOW TO??
+*/
+
+/*
+
+@media screen and (max-width: 1160px) {
+  
+  .disappear {
+    display: none;
+  }
+   
+  .appear {
+    display: block;
+  }
+}
+
+
+pixels = rem = User Agent Stylesheet (chrome)
+10px = 0.625rem = h6, 10.72px
+12px = 0.75rem
+14px = 0.875rem = h5, 13.28px
+16px = 1rem = base/body/h4
+18px = 1.125rem = h3, 18.72px
+20px = 1.25rem
+22px = 1.375rem
+24px = 1.5rem = h2
+26px = 1.625rem
+30px = 1.875rem
+32px = 2rem = h1
+
+*/
