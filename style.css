@@ -17,8 +17,6 @@ body {
 
 img, picture, svg, video {
   display: block; /* remove the small whitespace that renders under each */
-  max-width: 100%; /* allow to shrink with its container when forced */
-  height: auto;
 }
 
 ul, ol {
@@ -56,11 +54,16 @@ button:active {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+  text-align: right;
+}
+
+.header.wrap img {
+  max-width: 90%;
+  height: auto;
 }
 
 .header.wrap p {
-  font-size: 30px;
-  text-align: right;
+  font-size: 24px;
 }
 
 .menu.wrap {
@@ -70,6 +73,7 @@ button:active {
 
 .menu.wrap > ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   /* justify-content: space-between; */
 }
