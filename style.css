@@ -37,12 +37,13 @@ button:active {
 }
 
 body {
-  background-color: black;
+  background-image: url(./img/bg-body.jpg);
+  background-size: 100%;
 }
 
 .main-container {
   /* border: 2px solid red; */
-  max-width: 680px;
+  max-width: 720px;
   min-height: 100vh;
   margin: 10px auto;
   padding: 20px;
