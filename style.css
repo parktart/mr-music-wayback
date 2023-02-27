@@ -9,9 +9,10 @@
 }
 
 body {
-  /* font-family: 'Arial', sans-serif; */
-  /* color: rgb(42, 43, 42); */
-  /* min-height: 100vh; */
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: rgb(42, 43, 42);
+  background-image: url(./img/bg-body.jpg);
+  background-size: 100%;
 }
 
 img, picture, svg, video {
@@ -21,7 +22,7 @@ img, picture, svg, video {
 }
 
 ul, ol {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
@@ -36,13 +37,7 @@ button:active {
   opacity: 0.5;
 }
 
-body {
-  background-image: url(./img/bg-body.jpg);
-  background-size: 100%;
-}
-
 .main-container {
-  /* border: 2px solid red; */
   max-width: 720px;
   min-height: 100vh;
   margin: 10px auto;
@@ -54,29 +49,66 @@ body {
   background-size: 100%;
   border-bottom: 5px solid white;
   border-radius: 6px;
-
-  /* align-items: center; */
-  /* justify-content: center; */
 }
 
-.wrap {
-  /* border: 2px solid blue; */
-  /* display: flex; */
-  /* align-items: center; */
+.header.wrap {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.header.wrap p {
+  font-size: 30px;
+  text-align: right;
+}
+
+.menu.wrap {
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+}
+
+.menu.wrap > ul {
+  display: flex;
+  gap: 8px;
   /* justify-content: space-between; */
-  /* margin-bottom: 30px; */
+}
+
+.menu.wrap > ul > li {
+  font-size: 0.875rem;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(0, 0, 0, 0.2);
+  padding: 2px 4px;
+}
+
+.menu.wrap > ul > li:hover {
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
+.content.wrap {
+  font-weight: bold;
+  font-size: 0.75rem;
+  margin-bottom: auto;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.content.wrap p {
+  margin-bottom: 16px;
+}
+
+.footer.wrap {
+  font-size: 0.625rem;
+  border-top: 2px solid black;
+  padding-top: 10px;
 }
 
 
-/* CSS text-shadow HOW TO??
-	text-shadow: 3px 3px 1px #bebebe;
-   CSS box-shadow HOW TO??
-	box-shadow: 6px 6px 5px 0 #bebebe;
-note it is easy to visualize/manipulate both of these in DevTools!   
-
-  CSS transition-timing-function HOW TO??
-  CSS animation-timing-function HOW TO??
-*/
 
 /*
 
