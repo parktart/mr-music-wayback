@@ -8,11 +8,18 @@
   font: inherit; /* wipe all User Agent fonts, sizes, and weights */
 }
 
+html {
+  min-height: 100vh;
+  display: flex;
+}
+
 body {
   font-family: 'Helvetica', 'Arial', sans-serif;
   color: rgb(42, 43, 42);
   background-image: url(./img/bg-body.jpg);
   background-size: 100%;
+  padding: 10px 0;
+  flex: 1;
 }
 
 img, picture, svg, video {
@@ -37,8 +44,8 @@ button:active {
 
 .main-container {
   max-width: 720px;
-  min-height: 100vh;
-  margin: 10px auto;
+  height: 100%;
+  margin: 0 auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
