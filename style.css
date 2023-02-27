@@ -8,20 +8,6 @@
   font: inherit; /* wipe all User Agent fonts, sizes, and weights */
 }
 
-html {
-  min-height: 100vh;
-  display: flex;
-}
-
-body {
-  font-family: 'Helvetica', 'Arial', sans-serif;
-  color: rgb(42, 43, 42);
-  background-image: url(./img/bg-body.jpg);
-  background-size: 100%;
-  padding: 10px 0;
-  flex: 1;
-}
-
 img, picture, svg, video {
   display: block; /* remove the small whitespace that renders under each */
 }
@@ -42,9 +28,23 @@ button:active {
   opacity: 0.5;
 }
 
+html {
+  min-height: 100vh; /* body fills the viewport */
+  display: flex; /* body fills the viewport */
+}
+
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: rgb(42, 43, 42);
+  background-image: url(./img/bg-body.jpg);
+  background-size: cover;
+  padding: 10px 0;
+  flex: 1; /* body fills the viewport */
+}
+
 .main-container {
   max-width: 720px;
-  height: 100%;
+  height: 100%; /* fill the body which fills the viewport */
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -82,7 +82,6 @@ button:active {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  /* justify-content: space-between; */
 }
 
 .menu.wrap > ul > li {
