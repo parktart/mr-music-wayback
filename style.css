@@ -59,9 +59,12 @@ body {
 .header.wrap {
   color: white;
   display: flex;
-  justify-content: space-between;
   margin-bottom: 30px;
   text-align: right;
+}
+
+.header.wrap > div { /* stretch the two header divs to fill the header wrap */
+  flex: 1;
 }
 
 .header.wrap img {
